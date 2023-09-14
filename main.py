@@ -1,7 +1,7 @@
 # from langchain.document_loaders import UnstructuredPDFLoader
 # from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain.embeddings import SentenceTransformerEmbeddings
-# import pinecone
+import pinecone
 from torch import index_copy
 import uuid
 import pinecone
@@ -69,4 +69,3 @@ def upload_documnt(question,index_name):
     ]
     )
   return answer
-print(upload_documnt("what is machine learning","kk"))
